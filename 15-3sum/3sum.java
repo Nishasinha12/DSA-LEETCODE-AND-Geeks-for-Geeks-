@@ -17,8 +17,7 @@ class Solution {
                     k--;
                 }
                 else{
-                    List<Integer> temp=Arrays.asList(nums[i],nums[j],nums[k]);
-                    ans.add(temp);
+                    ans.add(Arrays.asList(nums[i],nums[j],nums[k]));
                     j++;k--;
                     while(j<k && nums[j]==nums[j-1])j++;
                     while(j<k && nums[k]==nums[k+1])k--;
