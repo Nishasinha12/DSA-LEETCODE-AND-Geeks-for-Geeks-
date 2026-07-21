@@ -3,7 +3,8 @@ class Solution {
         int low=1,high=x, ans=1;
         while(low<=high){
             long mid=low+(high-low)/2;
-            if(mid*mid <=x){
+            long val=mid*mid;
+            if(val <=x){
                 ans=(int)mid;
                 low=(int)mid+1;
             }
